@@ -3,6 +3,7 @@ import { ThemeProvider, CssBaseline, Container } from '@mui/material';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import Dashboard from './Dashboard';
 import Auth from './Auth';
+import UserMenu from './UserMenu'; // Нов компонент
 import theme from './theme';
 
 const App = () => {
@@ -25,7 +26,14 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Container>
-        {user ? <Dashboard /> : <Auth />}
+        {user ? (
+          <>
+            <UserMenu user={user} />
+            <Dashboard />
+          </>
+        ) : (
+          <Auth />
+        )}
       </Container>
     </ThemeProvider>
   );

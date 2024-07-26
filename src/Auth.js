@@ -34,14 +34,14 @@ const Auth = () => {
       >
         Sign in with Google
       </Button>
-      <Button
+      {/* <Button
         variant="contained"
         color="secondary"
         onClick={signInWithFacebook}
         fullWidth
       >
         Sign in with Facebook
-      </Button>
+      </Button> */}
     </Container>
   );
 };
