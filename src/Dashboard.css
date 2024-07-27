@@ -1,8 +1,16 @@
+.water-level-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
 .shape {
   width: 180px;
   height: 220px;
   overflow: hidden;
   position: relative;
+  border-radius: 5%;
   border: 1px solid #9c27b0;
   margin: 0 auto; /* Центрирайте контейнера */
   background-color: #e0f7fa; /* Светлосин фон за резервоара */

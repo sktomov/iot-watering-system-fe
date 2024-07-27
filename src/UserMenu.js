@@ -26,7 +26,7 @@ const UserMenu = ({ user }) => {
   return (
     <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', padding: '10px 0' }}>
       <Typography variant="h6" style={{ marginRight: '10px' }}>
-        Hello, {user.displayName}!
+        Здравей, {user.displayName}!
       </Typography>
       {user.photoURL && (
         <Avatar src={user.photoURL} alt={user.displayName} onClick={handleMenuOpen} style={{ cursor: 'pointer' }} />
